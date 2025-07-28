@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quill Serviços Estratégicos</title>
+    <style>
+        :root {
+            --cor-primaria: #131a21;
+            --cor-secundaria: #e8e1d2;
+            --cor-fundo: #f5f7f9;
+            --cor-texto: #1f1f1f;
+            --cor-clara: #fff;
+            --cor-subtexto: #555;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--cor-texto);
+            background-color: var(--cor-fundo);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--cor-primaria);
+            color: var(--cor-clara);
+            padding: 20px 40px;
+        }
+
+        header img {
+            height: 250px;
+            /* Um leve fundo para a imagem se destacar no header escuro */
+            background-color: #f0f0f0;
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        header div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav {
+            background: var(--cor-secundaria);
+            padding: 10px 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: var(--cor-texto);
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.3s ease;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        .hero {
+            background: url("banner.png") center/cover no-repeat;
+            background-color: rgba(0, 0, 0, 0.6);
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--cor-clara);
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            padding: 30px 0;
+        }
+
+        section {
+            padding: 60px 40px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service {
+            background: var(--cor-clara);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .service h3 {
+            /* Cor do h3 trocada para a primária para garantir contraste */
+            color: var(--cor-primaria);
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            color: var(--cor-subtexto);
+        }
+
+        #about {
+            background: var(--cor-clara);
+        }
+
+        #about p {
+            color: var(--cor-subtexto);
+            padding: 20px;
+            margin: 10px 30px;
+        }
+
+        #contato {
+            padding: 0;
+            background: var(--cor-secundaria);
+        }
+
+        .contact-centered {
+            color: var(--cor-texto);
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 8px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .contact-centered h3 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .contact-centered p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        footer {
+            background: var(--cor-secundaria);
+            color: var(--cor-texto);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+            <img src="logo.png" alt="Logo Quill Serviços Estratégicos" />
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">Sobre nós</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Soluções de apoio para operações que exigem precisão.</h2>
+    </section>
+
+    <section id="about">
+        <h2 style="text-align:center; margin-bottom: 40px;">Sobre nós</h2>
+        <p>
+            A Quill atua no suporte estratégico e operacional de empresas que precisam de agilidade com segurança, estrutura com flexibilidade e processos com controle. Oferecemos serviços sob medida para negócios que estão em transição, expansão ou em fase de reestruturação — com foco em continuidade, regularidade e sustentação.
+        </p>
+    </section>
+
+    <section id="servicos">
+        <h2 style="text-align:center; margin-bottom: 40px;">Nossos Serviços</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Organização de estruturas jurídicas e administrativas</h3>
+                <p>Estruturamos seu negócio para operar com segurança e eficiência.</p>
+            </div>
+            <div class="service">
+                <h3>Suporte recorrente a rotinas operacionais</h3>
+                <p>Oferecemos apoio contínuo para garantir a fluidez e consistência de suas operações.</p>
+            </div>
+            <div class="service">
+                <h3>Apoio em projetos com múltiplas frentes ou parceiros</h3>
+                <p>Coordenamos projetos complexos, assegurando alinhamento e sinergia entre todos.</p>
+            </div>
+            <div class="service">
+                <h3>Gestão documental e manutenção de compliance</h3>
+                <p>Organizamos seus documentos e garantimos a conformidade com as normas essenciais.</p>
+            </div>
+            <div class="service">
+                <h3>Integração de processos para times e parceiros</h3>
+                <p>Criamos fluxos de trabalho coesos para otimizar a colaboração e os resultados.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="contact-centered">
+            <p>contato@quillservicosestrategicos.com.br</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Quill Serviços Estratégicos. Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
